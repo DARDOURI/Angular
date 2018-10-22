@@ -1,0 +1,5 @@
+<p>Contact list</p>
+
+<contact-list (onSelect)="contactSelected($event)"></contact-list>
+<contact-detail [contact]="currentContact" *ngIf="currentContact != null"></contact-detail>
+<router-outlet></router-outlet>
